@@ -21,11 +21,11 @@ TESTS = {
     ],
     "Extra": [
         {
-            "input": ["6", "3"],
+            "input": ["6"],
             "answer": True,
         },
         {
-            "input": ["hello", "list"],
+            "input": [" "],
             "answer": False,
         }
     ]
