@@ -2,19 +2,19 @@
 {% block env %}{% endblock env %}
 
 {% block start %}
-def sum_two(a: int, b: int) -> int:
+def is_number(text: str) -> str:
     # your code here
-    return None
+    return text.isnumeric()
 {% endblock start %}
 
 {% block example %}
 print('Example:')
-print(sum_two(1, 2))
+print(is_number("678"))
 {% endblock %}
 
 {% block tests %}
 {% for t in tests %}
-assert {% block call %}sum_two({{t.input|p_args}})
+assert {% block call %}is_number({{t.input|p_args}})
 {% endblock %} == {% block result %}{{t.answer|p}}{% endblock %}{% endfor %}
 {% endblock %}
 
